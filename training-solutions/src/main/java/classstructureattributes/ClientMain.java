@@ -9,7 +9,7 @@ public class ClientMain {
         System.out.println("Type in the client's name:");
         client.name = scanner.nextLine();
 
-        System.out.println("Type in the year od birth for this client:");
+        System.out.println("Type in the year of birth for this client:");
         client.year = scanner.nextInt();
         scanner.nextLine(); // Dummy for the new line characters
 
