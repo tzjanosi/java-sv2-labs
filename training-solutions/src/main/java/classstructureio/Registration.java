@@ -1,5 +1,4 @@
 package classstructureio;
-
 import java.util.Scanner;
 
 public class Registration {
@@ -9,7 +8,7 @@ public class Registration {
         System.out.println("Type in your name, please:");
         String name = scanner.nextLine();
 
-        System.out.println("Type in xour email address, please:");
+        System.out.println("Type in your email address, please:");
         String emailCim = scanner.nextLine();
 
         System.out.println("The data, provided during the registration are the following:");
