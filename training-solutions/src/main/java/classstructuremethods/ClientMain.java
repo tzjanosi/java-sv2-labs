@@ -1,7 +1,5 @@
 package classstructuremethods;
 
-import classstructureattributes.Client;
-
 import java.util.Scanner;
 
 public class ClientMain {

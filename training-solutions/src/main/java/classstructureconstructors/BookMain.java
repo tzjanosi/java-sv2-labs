@@ -1,7 +1,5 @@
 package classstructureconstructors;
 
-import classstructuremethods.Note;
-
 import java.util.Scanner;
 
 public class BookMain {
