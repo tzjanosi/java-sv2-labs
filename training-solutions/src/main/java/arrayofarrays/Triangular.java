@@ -27,6 +27,5 @@ public class Triangular {
 
         int[][] triangularMatrix=triangular.triangularMatrix(rowNumber);
         arrayOfArrays.printArrayOfArrays(triangularMatrix);
-
     }
 }
