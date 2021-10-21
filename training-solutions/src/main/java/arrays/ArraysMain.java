@@ -75,6 +75,23 @@ public class ArraysMain {
         double[] shorterAnotherDay=Arrays.copyOfRange(anotherDay,0,shorterLength);
         return sameTempValues(shorterDay,shorterAnotherDay);
     }
+    void reportWonLottery(int[] tip, int[] winner){
+        ArraysMain arraysMain=new ArraysMain();
+        System.out.println("Tip: "+ Arrays.toString(tip));
+        System.out.println("Winner: "+ Arrays.toString(winner));
+        if (arraysMain.wonLottery(tip,winner)){
+            System.out.println("You are the winner!");
+        }
+        else{
+            System.out.println("Unfortunately not this time.");
+        }
+    }
+    boolean wonLottery(int[] tip, int[] winner){
+        Arrays.sort(tip);
+        Arrays.sort(winner);
+        return Arrays.equals(tip,winner);
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -114,5 +131,17 @@ public class ArraysMain {
         double[] anotherDay6 = {4.1,7.2,9.0,3.9,3.7,2.8,1.7,1.1,2.0,-3.6,1.5,2.7,2.0,4.0,6.7,2.7,4.1,8.5,16.8,4.6,6.7,2.7,15.3,4.8};
         arraysMain.reportSameTempValuesDaylight(day6,anotherDay6);
 
+        int[] tip={1,2,3,4,5};
+        int[] winner={5,2,3,4,11};
+        int[] winnerClone = winner.clone();
+        arraysMain.reportWonLottery(tip,winnerClone);
+        System.out.println("winner: "+ Arrays.toString(winner));
+        System.out.println();
+
+        int[] tip2={1,2,3,4,5};
+        int[] winner2={5,2,3,4,1};
+        winnerClone = winner2.clone();
+        arraysMain.reportWonLottery(tip2,winnerClone);
+        System.out.println("winner: "+ Arrays.toString(winner2));
     }
 }
