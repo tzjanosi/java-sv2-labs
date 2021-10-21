@@ -34,6 +34,18 @@ public class ArraysMain {
         }
     }
 
+    boolean sameTempValues(double[] day, double[] anotherDay){
+        return Arrays.equals(day,anotherDay);
+    }
+
+    int min(int a, int b){
+        if(a<=b){
+            return a;
+        }
+        else{
+            return b;
+        }
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -44,5 +56,28 @@ public class ArraysMain {
         System.out.println("Type in the size of multiplication table:");
         int size=scanner.nextInt();
         arraysMain.multiplicationTableAsString(size);
+
+        System.out.println();
+        double[] day = {4.1,7.2,9.0,3.9,3.7,2.8,1.7,1.1,2.0,-3.6,1.5,2.7,2.0,4.0,6.7,2.7,4.1,8.5,16.8,4.6,6.7,2.7,15.2,4.7};
+        double[] anotherDay = {4.1,7.2,9.0,3.9,3.7,2.8,1.7,1.1,2.0,-3.6,1.5,2.7,2.0,4.0,6.7,2.7,4.1,8.5,16.8,4.6,6.7,2.7,15.2,4.7};
+        System.out.println("Values for day#1: "+ Arrays.toString(day));
+        System.out.println("Values for day#2: "+ Arrays.toString(anotherDay));
+        if (arraysMain.sameTempValues(day,anotherDay)){
+            System.out.println("The values are matched.");
+        }
+        else{
+            System.out.println("The values are different.");
+        }
+        System.out.println();
+        double[] day2 = {4.1,7.2,9.0,3.9,3.7,2.8,1.7,1.1,2.0,-3.6,1.5,2.7,2.0,4.0,6.7,2.7,4.1,8.5,16.8,4.6,6.7,2.7,15.2,4.7};
+        double[] anotherDay2 = {4.1,7.2,9.0,3.9,3.7,2.8,1.7,1.1,2.0,-3.6,1.5,2.7,2.0,4.0,6.7,2.7,4.1,8.5,16.8,4.6,6.7,2.7,15.2,4.8};
+        System.out.println("Values for day#1: "+ Arrays.toString(day2));
+        System.out.println("Values for day#2: "+ Arrays.toString(anotherDay2));
+        if (arraysMain.sameTempValues(day2,anotherDay2)){
+            System.out.println("The values are matched.");
+        }
+        else{
+            System.out.println("The values are different.");
+        }
     }
 }
