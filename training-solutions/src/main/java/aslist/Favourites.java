@@ -22,7 +22,5 @@ public class Favourites {
         favouriteThings.add(favThing);
         System.out.println("Thr size of the list is: "+favouriteThings.size());
         System.out.println(favouriteThings);
-
-
     }
 }
