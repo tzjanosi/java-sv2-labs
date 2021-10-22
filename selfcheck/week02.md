@@ -37,9 +37,9 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [ ] [Tömbök kezelése](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709801-tombok-kezelese)
 * [x] Tömbök kezelése gyakorlati feladat
 * [ ] [Lista](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709852-lista)
-* [ ] Lista gyakorlati feladat
+* [x] Lista gyakorlati feladat
 * [ ] [Lista létrehozása](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993631-lista-letrehozasa)
-* [ ] Lista létrehozása gyakorlati feladat
+* [x] Lista létrehozása gyakorlati feladat
 * [ ] [Ciklusok fajtái](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993677-ciklusok-fajtai)
 * [ ] Ciklusok fajtái gyakorlati feladat
 * [ ] [Módosítás bejáráskor](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993685-modositas-bejaraskor)
@@ -59,5 +59,5 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] 2021-10-19 konzultáció gyakorlati feladat
 * [x] 2021-10-21 konzultáció részvétel/videó
 * [x] 2021-10-21 konzultáció gyakorlati feladat
-* [ ] 2021-10-22 konzultáció részvétel/videó
-* [ ] 2021-10-22 konzultáció gyakorlati feladat
+* [x] 2021-10-22 konzultáció részvétel/videó
+* [x] 2021-10-22 konzultáció gyakorlati feladat
