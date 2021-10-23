@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class RandomDraw {
     public static void main(String[] args) {
-        Random rnd = new Random();
+        Random rnd = new Random(1984);
         String[] names = {"Monday Joe","Tuesday Jack","Wednesday David","Thursday Mary","Friday Ivan","Saturday Alex","Sunday Robert","White lilly","Black Jack","Never Enough"};
         List<String> namesList = Arrays.asList(names);
         System.out.println("The candidates are: "+namesList);
