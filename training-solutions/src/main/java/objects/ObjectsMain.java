@@ -1,5 +1,9 @@
 package objects;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ObjectsMain {
     public static void main(String[] args) {
         new Book();
@@ -51,6 +55,17 @@ public class ObjectsMain {
         System.out.println(book6);
         System.out.println(book7);
         System.out.println("A hozzáférhető objektumok száma: 3");
+        System.out.println();
+
+        Book[] bookArray={book1,book2,book3};
+        System.out.println("The array contains: "+Arrays.toString(bookArray));
+        List<Book> booklist= Arrays.asList(bookArray);
+        System.out.println("The first list contains: "+booklist);
+        List<Book> bookList2 = new ArrayList<>();
+        bookList2.add(book1);
+        bookList2.add(book2);
+        bookList2.add(book3);
+        System.out.println("The second list contains: "+booklist);
 
     }
 }
