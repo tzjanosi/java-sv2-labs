@@ -52,7 +52,7 @@ public class Task {
         System.out.println("Type in the description of the task:");
         String description=scanner.nextLine();
         Task task=new Task(title, description);
-        System.out.println("Type in the duration of the task:");
+        System.out.println("Type in the duration of the task (in minutes):");
         int duration=scanner.nextInt();
         task.setDuration(duration);
         task.start();
