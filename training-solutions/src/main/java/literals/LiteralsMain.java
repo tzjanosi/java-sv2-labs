@@ -21,10 +21,12 @@ public class LiteralsMain {
         String word="title".toUpperCase();
         System.out.println("\"title\".toUpperCase() = "+word);
 
-        System.out.println(Integer.toBinaryString(1));
-        System.out.println(Integer.toBinaryString(-2));
+        System.out.println("Binary 1: "+Integer.toBinaryString(1));
+        System.out.println("Binary -2 ver1: "+Integer.toBinaryString(-2));
+        System.out.println("Binary -2 ver2: "+Integer.toString(-2, 2));
 
-        System.out.println("2021 a kül számrendszerekben:");
+        System.out.println();
+        System.out.println("2021:");
         System.out.println("Binary 2021: "+Integer.toString(2012, 2));
         System.out.println("Octal 2021: "+Integer.toString(2012, 8));
         System.out.println("Decimal 2021: "+Integer.toString(2012, 10));
