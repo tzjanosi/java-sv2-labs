@@ -2,8 +2,8 @@ package enumtype.solarsystem;
 
 public class SolarSystemMain {
     public static void main(String[] args) {
-    for(SolarSystem solarSystem:SolarSystem.values()){
-        System.out.println(solarSystem.name()+" has "+solarSystem.getNumberOfMoons()+" moon(s)");
-    }
+        for(SolarSystem solarSystem:SolarSystem.values()){
+            System.out.println(solarSystem.name()+" has "+solarSystem.getNumberOfMoons()+" moon(s)");
+        }
     }
 }
