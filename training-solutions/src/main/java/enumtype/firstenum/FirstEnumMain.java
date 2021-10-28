@@ -17,5 +17,10 @@ public class FirstEnumMain {
         for(Ocean ocean:Ocean.values()){
             System.out.println(ocean.valueOf(ocean.name()));
         }
+        System.out.println();
+
+        for(Football football:Football.values()){
+            System.out.println(football.name());
+        }
     }
 }
