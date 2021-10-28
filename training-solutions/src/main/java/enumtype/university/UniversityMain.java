@@ -5,6 +5,5 @@ public class UniversityMain {
         for(University university:University.values()){
             System.out.println(university.name()+" is an acronym for "+university.getName());
         }
-
     }
 }
