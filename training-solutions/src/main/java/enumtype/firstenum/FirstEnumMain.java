@@ -12,5 +12,10 @@ public class FirstEnumMain {
             continentList.add(continent.name());
             }
         System.out.println(continentList);
+        System.out.println();
+
+        for(Ocean ocean:Ocean.values()){
+            System.out.println(ocean.valueOf(ocean.name()));
+        }
     }
 }
