@@ -1,5 +1,6 @@
 package typeconversion;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ConversionMain {
@@ -8,5 +9,14 @@ public class ConversionMain {
         Conversion conversion=new Conversion();
         double randomDouble= 128.0 * rnd.nextDouble();
         System.out.println(randomDouble+" after conversion is: "+conversion.convertDoubleToDouble(randomDouble));
+        int length=5+rnd.nextInt(10);;
+        int[] arrForRndNumbers = new int[length];
+        arrForRndNumbers[0]=0;
+        arrForRndNumbers[length-1]=127;
+        for (int i = 1; i < arrForRndNumbers.length-1; i++) {
+            arrForRndNumbers[i] = rnd.nextInt(512)-128;
+        }
+        System.out.println("Original: "+Arrays.toString(arrForRndNumbers));
+        System.out.println("Converted: "+Arrays.toString(conversion.convertIntArrayToByteArray(arrForRndNumbers)));
     }
 }
