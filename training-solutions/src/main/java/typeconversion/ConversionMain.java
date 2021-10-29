@@ -11,7 +11,7 @@ public class ConversionMain {
         System.out.println(randomDouble+" after conversion is: "+conversion.convertDoubleToDouble(randomDouble));
         System.out.println();
 
-        int length=5+rnd.nextInt(10);;
+        int length=5+rnd.nextInt(10);
         int[] arrForRndNumbers = new int[length];
         arrForRndNumbers[0]=0;
         arrForRndNumbers[length-1]=127;
