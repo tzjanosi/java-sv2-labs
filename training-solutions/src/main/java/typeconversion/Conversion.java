@@ -18,4 +18,8 @@ public class Conversion {
         }
         return output;
     }
+    public int getFirstDecimal(double numberToConvert){
+        double remainsValue=numberToConvert-(int) numberToConvert;
+        return (int) (10*remainsValue);
+    }
 }
