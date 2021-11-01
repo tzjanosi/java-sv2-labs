@@ -34,15 +34,16 @@ public class NameMain {
         String givenName=scanner.nextLine();
 
         NameMain nameMain=new NameMain();
+
+        Name name;
         if(nameMain.titleContains(title)){
-            Name name=new Name(familyName, middleName, givenName, Title.valueOf(title));
-            System.out.println("Hungarían style: "+ name.concatNameHungarianStyle());
-            System.out.println("Western style: "+ name.concatNameWesternStyle());
+            name=new Name(familyName, middleName, givenName, Title.valueOf(title));
+
         }
         else{
-            Name name=new Name(familyName, middleName, givenName);
-            System.out.println("Hungarían style: "+ name.concatNameHungarianStyle());
-            System.out.println("Western style: "+ name.concatNameWesternStyle());
+            name=new Name(familyName, middleName, givenName);
         }
+        System.out.println("Hungarían style: "+ name.concatNameHungarianStyle());
+        System.out.println("Western style: "+ name.concatNameWesternStyle());
     }
 }
