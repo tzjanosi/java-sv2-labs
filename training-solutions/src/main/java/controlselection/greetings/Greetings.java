@@ -4,13 +4,13 @@ import java.util.Random;
 
 public class Greetings {
     public String greeting(int hour, int minute){
-        if(hour>22 || hour<5 || (hour==5 && minute==0)){
+        if((hour==20 && minute>0) || hour>20 || hour<5 || (hour==5 && minute==0)){
             return "jó éjt";
         }
         if((hour==5 && minute>0) || hour<9){
             return "jó reggelt";
         }
-        if(hour<18 || (hour==18 && minute<30)){
+        if(hour<18 || (hour==18 && minute<=30)){
             return "jó napot";
         }
         else{
