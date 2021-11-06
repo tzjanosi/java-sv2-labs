@@ -1,6 +1,5 @@
 package controlselection.month;
 
-import controlselection.greetings.Greetings;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
