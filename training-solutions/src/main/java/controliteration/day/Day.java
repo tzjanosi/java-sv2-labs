@@ -31,13 +31,13 @@ public class Day {
         day.addHour(hour);
         hour=new Hour(6);
         day.addHour(hour);
-        hour=new Hour(12);
+        hour=new Hour(7);
         day.addHour(hour);
-        hour=new Hour(17);
+        hour=new Hour(12);
         day.addHour(hour);
         hour=new Hour(21);
         day.addHour(hour);
-        hour=new Hour(23);
+        hour=new Hour(22);
         day.addHour(hour);
         hour=new Hour(0);
         day.addHour(hour);
