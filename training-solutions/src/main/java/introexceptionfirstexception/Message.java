@@ -16,9 +16,15 @@ public class Message {
 
     private void soutCodedMessage(List<String> codedMessage) {
         StringBuilder sb = new StringBuilder();
+        /*
         for(int i=0;i<codedMessage.size(); i++){
             sb.append(convertStringToChar(codedMessage.get(i)));
         }
+        */
+        for(String cMessage:codedMessage){
+            sb.append(convertStringToChar(cMessage));
+        }
+
         System.out.println(sb);
     }
 
