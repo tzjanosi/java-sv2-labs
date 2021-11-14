@@ -20,8 +20,9 @@ public class Cinema {
         StringBuilder sb = new StringBuilder("Lefoglalt helyek: ");
         for(int i=1;i<=numberOfTickets; i++){
             sb.append(row+". sor "+i+". szék");
-            if(i<numberOfTickets)
+            if(i<numberOfTickets) {
                 sb.append(", ");
+            }
         }
 
         System.out.println("A mozijegy.hu rendszerben vásárolt jegyek adatai a következők: \n" +
