@@ -21,9 +21,5 @@ public class PositiveNumber {
         catch(IllegalArgumentException iae){
             System.out.println(iae.getMessage());
         }
-
-
-
-
     }
 }
