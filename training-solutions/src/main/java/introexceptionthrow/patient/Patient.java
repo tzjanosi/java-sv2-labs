@@ -1,4 +1,5 @@
-package introexceptionthrow;
+package introexceptionthrow.patient;
+
 import java.util.Scanner;
 
 public class Patient {
@@ -12,17 +13,20 @@ public class Patient {
         System.out.println("Please, provide data for the registration!");
         System.out.println("Type in the name!");
         String name = scanner.nextLine();
+        System.out.println("Type in the social security number!");
+        String socialSecurityNumber = scanner.nextLine();
         System.out.println("Type in the year of birth!");
         int yearOfBirth = scanner.nextInt();
         System.out.println("-----------------------------------------------------------------------");
         try{
-            Patient patient=new Patient(name, "", yearOfBirth);
+            Patient patient=new Patient(name, socialSecurityNumber, yearOfBirth);
         }
         catch(IllegalArgumentException iae){
             registrationFailed=true;
             System.out.println(iae.getMessage());
         }
         System.out.println("Name: "+name);
+        System.out.println("Social security number: "+socialSecurityNumber);
         System.out.println("Year of birth: "+yearOfBirth);
         String registrationWasSuccessfulString=registrationFailed?"The registration was NOT successful!":"The registration was successful!";
         System.out.println(registrationWasSuccessfulString);
@@ -32,6 +36,10 @@ public class Patient {
     public Patient(String name, String socialSecurityNumber, int yearOfBirth) {
         if(name.trim().isEmpty()) {
             throw new IllegalArgumentException("No name provided!");
+        }
+        SsnValidator ssnValidator=new SsnValidator();
+        if(!ssnValidator.isValidSsn(socialSecurityNumber)) {
+            throw new IllegalArgumentException("Not valid social security number!");
         }
         if(yearOfBirth<1900) {
             throw new IllegalArgumentException("Too old!");
