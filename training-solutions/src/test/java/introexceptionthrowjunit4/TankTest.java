@@ -7,25 +7,24 @@ import org.junit.rules.ExpectedException;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.*;
 
-public class StudentTest {
-    private introexceptionthrowjunit4.Student student;
+public class TankTest {
+    private introexceptionthrowjunit4.Tank tank;
 
     @Before
-    public void setUp(){
-        student=new Student();
+    public void setUp() throws Exception {
+        tank=new Tank();
     }
     @Test
     public void testOK(){
         //Given
 
         //When
-        student.addNote(5);
+        tank.modifyAngle(-25);
 
         //Then
-        assertThat(student.getNotesList().get(0),equalTo(5));
+        assertThat(tank.getAngle(),equalTo(-25));
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -33,7 +32,7 @@ public class StudentTest {
         //Given
 
         //When
-        student.addNote(0);
+        tank.modifyAngle(81);
 
         //Then
     }
@@ -44,11 +43,11 @@ public class StudentTest {
     @Test
     public void testNOK2() {
         exception.expect(IllegalArgumentException.class);
-        exception.expectMessage("Note must be between 1 and 5!");
+        exception.expectMessage("The target position should be between -80 and 80 degree!");
         //Given
 
         //When
-        student.addNote(6);
+        tank.modifyAngle(-81);
 
         //Then
     }
@@ -62,7 +61,7 @@ public class StudentTest {
 
         //Then
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class,
-                () -> student.addNote(-1));
-        assertEquals("Note must be between 1 and 5!", exception.getMessage());
+                () -> tank.modifyAngle(125));
+        assertEquals("The target position should be between -80 and 80 degree!", exception.getMessage());
     }
 }
