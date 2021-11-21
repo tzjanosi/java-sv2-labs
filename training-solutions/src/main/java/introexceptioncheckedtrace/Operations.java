@@ -29,7 +29,8 @@ public class Operations{
         LocalDateTime today = LocalDateTime.now();
         StringBuilder outputSB=new StringBuilder(dateFormat.format(today)+", ");
 
-        Character two = new Character('2');
+        //Character two = new Character('2');
+        Character two = '2';
         for (int i=0; i< numberOfCars.size();i++){
             if(two.equals(numberOfCars.get(i).charAt(0))) {
                 outputSB.append(numberOfCars.get(i) + " ");
