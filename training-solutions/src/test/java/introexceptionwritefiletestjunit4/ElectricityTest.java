@@ -17,7 +17,7 @@ public class ElectricityTest {
     public TemporaryFolder temporaryFolder = new TemporaryFolder();
 
     @Test
-    public void writeNames() throws IOException {
+    public void TestOK() throws IOException {
         Path path = temporaryFolder.newFile("streets.txt").toPath();
 
         new Electricity().writeStreets(path);
