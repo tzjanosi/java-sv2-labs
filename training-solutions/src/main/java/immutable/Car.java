@@ -12,7 +12,6 @@ public class Car {
         if (brand == null || brand.isEmpty()) {
             throw new IllegalArgumentException("Brand name cannot be empty!");
         }
-        int year = LocalDate.now().getYear();
         if (getYearOfProduction>LocalDate.now().getYear()) {
             throw new IllegalArgumentException("Year of production cannot be in the future!");
         }
