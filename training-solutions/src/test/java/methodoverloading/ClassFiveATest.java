@@ -1,6 +1,5 @@
 package methodoverloading;
 
-import methodchain.Number;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -22,7 +21,7 @@ class ClassFiveATest {
 
     @Test
     void testGetTodayReferringStudentWithNumberParameter() {
-        String name = classFiveA.getTodayReferringStudent(Number.THREE);
+        String name = classFiveA.getTodayReferringStudent(ClassFiveA.Number.THREE);
 
         assertEquals("Kiss József", name);
     }
