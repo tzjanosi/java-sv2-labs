@@ -1,4 +1,4 @@
-package school;
+package dynamictypes.school;
 
 public class School {
     private String name;

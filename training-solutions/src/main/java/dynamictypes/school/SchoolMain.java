@@ -1,4 +1,4 @@
-package school;
+package dynamictypes.school;
 
 public class SchoolMain {
     public static void main(String[] args) {
