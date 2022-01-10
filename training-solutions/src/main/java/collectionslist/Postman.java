@@ -16,7 +16,7 @@ public class Postman {
         if(address==null){
             throw new NullPointerException("Address mustn't be null!");
         }
-        addressList.remove(addressList.indexOf(address));
+        addressList.remove(address);
     }
 
     public List<String> getAddresses() {
