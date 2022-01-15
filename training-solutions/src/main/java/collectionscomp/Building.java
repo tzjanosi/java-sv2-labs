@@ -16,13 +16,7 @@ public class Building implements Comparable<Building> {
 
     @Override
     public int compareTo(Building other) {
-        if (numbersOfLevels>other.numbersOfLevels){
-            return 1;
-        }
-        else if(numbersOfLevels<other.numbersOfLevels){
-            return -1;
-        }
-        return 0;
+        return this.numbersOfLevels-other.numbersOfLevels;
     }
 
     @Override
