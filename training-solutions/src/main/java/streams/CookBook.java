@@ -14,7 +14,8 @@ public class CookBook {
     List<String> listCakeNamesWithGivenIngredient(String ingredient){
         List<String> output=cakesList.stream()
                 .filter(cake -> cake.needThatIngredient(ingredient))
-                .map(cake -> cake.getName())
+//                .map(cake -> cake.getName())
+                .map(Cake::getName)
                 .collect(Collectors.toList());
         return output;
     }
@@ -22,7 +23,8 @@ public class CookBook {
     List<String> listCakeNamesWithMaxIngredients(int max){
         List<String> output=cakesList.stream()
                 .filter(cake -> cake.getIngredients().size()<=max)
-                .map(cake -> cake.getName())
+//                .map(cake -> cake.getName())
+                .map(Cake::getName)
                 .collect(Collectors.toList());
         return output;
     }
